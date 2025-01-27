@@ -1,0 +1,20 @@
+.home {
+    text-align: center;
+    padding: 3rem;
+  }
+  
+  .intro {
+    background-color: #f4f4f4;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+  }
+  
+  .intro h2 {
+    font-size: 2.5rem;
+  }
+  
+  .intro p {
+    font-size: 1.2rem;
+  }
+  
