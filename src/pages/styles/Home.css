@@ -28,14 +28,26 @@
   z-index: 0; 
 }
 
-.intro h3 {
+.intro h1 {
+  font-size: 3.5rem; /* Plus grand que le h2 */
+  color: white; /* Texte en blanc */
+  position: absolute; /* Position absolue pour un placement précis */
+  top: 45%; /* Juste au-dessus du h2 (décale légèrement vers le haut) */
+  left: 50%; /* Centré horizontalement */
+  transform: translate(-50%, -50%); /* Centrage parfait */
+  z-index: 1; /* Devant l'overlay sombre */
+  margin: 0; /* Pas de marge pour éviter les décalages indésirables */
+}
+
+.intro h2 {
   font-size: 2.5rem;
   color: white;
   position: absolute; 
-  top: 50%; 
+  top: 58%; /* Décale le h2 plus bas pour créer un espace plus grand */
   left: 50%; 
   transform: translate(-50%, -50%);
   z-index: 1;
+  margin: 0; /* Pas de marge pour aligner correctement */
 }
 
 .intro button {
@@ -43,11 +55,11 @@
   color: #f4f4f4;
   border-radius: 5px;
   border-style: none;
-  padding: 10px 20px;
+  padding: 5px 15px;
   cursor: pointer;
   margin-top: 1rem;
   position: absolute; 
-  top: 60%;
+  top: 65%; /* Décale le h2 plus bas pour créer un espace plus grand */
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
