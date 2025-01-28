@@ -1,14 +1,13 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
 import './styles/Home.css';
+import heroBg from '../assets/img/hero-bg.jpg';  // Vérifie l'importation de l'image
 
 const Home = () => {
   return (
     <div className="home">
-      <Navbar />
-      <section className="intro">
-        <h2>Bienvenue sur mon portfolio !</h2>
-        <p>Je suis un développeur web passionné par la création de sites modernes et interactifs.</p>
+      <section className="intro" style={{ backgroundImage: `url(${heroBg})` }}>
+      <h3>Développeur web full stack</h3>
+        <button>En savoir plus</button>
       </section>
     </div>
   );
