@@ -36,9 +36,9 @@ const Footer = () => {
           <div className="footer-column">
             <h3>Mes dernières réalisations</h3>
             <ul>
-              <li><a href="#">➤ Fresh food</a></li>
-              <li><a href="#">➤ Restaurant Akira</a></li>
-              <li><a href="#">➤ Espace bien-être</a></li>
+              <li><Link to="/realisations">➤ Fresh Food</Link></li>
+              <li><Link to="/realisations">➤ Restaurant Akira</Link></li>
+              <li><Link to="/realisations">➤ Espace bien-être</Link></li>
             </ul>
           </div>
   
