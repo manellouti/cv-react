@@ -23,7 +23,7 @@ function App() {
       <Route path="/blog" exact element={<Blog />} />
       <Route path="/contact" exact element={<Contact />} />
       <Route path="/realisations" exact element={<Realisations />} />
-      <Route path="/services" exact element={<Services />} />
+      <Route path="/Services" exact element={<Services />} />
       {/* ici les autres routes pour les pages */}
     </Routes>
     <ScrollToAnchor />

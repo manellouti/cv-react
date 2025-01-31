@@ -1,0 +1,69 @@
+.services-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Bannière */
+  .banner {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Contenu principal */
+  .services-main {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .services-main h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .services-main p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+ .blue-line {
+  width: 20%;
+  margin: 20px auto;
+  border: none;
+  border-top: 3px solid rgb(0, 0, 255);
+}
+
+  
+  /* Section des services */
+  .service-blocks {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  
+  .service-block {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  
+  .service-block h2 {
+    color:#333;
+    margin-top: 10px;
+  }
+  
+  .service-block p {
+    color: #666;
+    font-size: 1rem;
+  }
+  
+  .icon {
+    font-size: 40px;
+    color: blue;
+  }
+  
