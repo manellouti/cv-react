@@ -3,20 +3,21 @@ import './styles/Home.css';
 import heroBg from '../assets/img/hero-bg.jpg';
 import JohnDoeAbout from '../assets/img/john-doe-about.jpg';
 
+
 const Home = () => {
   return (
-    <div className="home">
-      <section className="intro" style={{ backgroundImage: `url(${heroBg})` }}>
+    <div id="home">
+      <section id="intro" style={{ backgroundImage: `url(${heroBg})` }}>
       <h1>Bonjour, je suis John Doe</h1>
       <h2>Développeur web full stack</h2>
         <button>En savoir plus</button>
       </section>
 
-      <section className="about">
+      <section id="about">
         {/* Partie gauche : Titre et description */}
-        <div className="about-left">
+        <div id="about-left">
           <h2>À Propos</h2>
-          <div className="underline"></div>
+          <div id="underline"></div>
           <p>
             Passioné par l'informatique et les nouvelles technologies,
             j'ai suivi une formation d'intégrateur-développeur web au CEF.
@@ -32,20 +33,20 @@ const Home = () => {
         </div>
 
         {/* Partie droite : Image & compétences */}
-        <div className="about-right">
-          <img src={JohnDoeAbout} alt="John Doe" className="john-doe-about" />
-          <h3>Mes Compétences</h3>
-          <div className="skills">
-            <div className="skill">
-              <span>HTML 90%</span>
-              <div className="progress">
-                <div className="progress-bar html"></div>
+        <div id="about-right">
+        <img src={JohnDoeAbout} alt="John Doe" className="profile-img" />
+        <h3>Mes Compétences</h3>
+          <div id="skills">
+          <div className="skill">
+          <span>HTML 90%</span>
+          <div className="progress">
+          <div className="progress-bar html"></div>
               </div>
             </div>
-            <div className="skill">
+            <div className="skill"> 
               <span>CSS3 80%</span>
-              <div className="progress">
-                <div className="progress-bar css"></div>
+            <div className="progress">
+            <div className="progress-bar css"></div>
               </div>
             </div>
             <div className="skill">
@@ -57,13 +58,13 @@ const Home = () => {
             <div className="skill">
               <span>PHP 60%</span>
               <div className="progress">
-                <div className="progress-bar php"></div>
+              <div className="progress-bar php"></div>
               </div>
             </div>
             <div className="skill">
               <span>React 50%</span>
               <div className="progress">
-                <div className="progress-bar react"></div>
+              <div className="progress-bar react"></div>
               </div>
             </div>
           </div>

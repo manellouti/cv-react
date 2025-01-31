@@ -7,6 +7,8 @@ import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
 import Realisations from './pages/Realisations';
+import Footer from './components/Footer';
+import ScrollToAnchor from "./components/ScrollToAnchor";
 import './App.css';
 
 
@@ -24,6 +26,8 @@ function App() {
       <Route path="/services" exact element={<Services />} />
       {/* ici les autres routes pour les pages */}
     </Routes>
+    <ScrollToAnchor />
+    <Footer />
     </div>
     </Router>
   );

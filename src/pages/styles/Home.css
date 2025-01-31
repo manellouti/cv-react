@@ -1,15 +1,10 @@
-.home {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-
-.intro {
+/* Intro Section */
+#intro {
   position: relative;
   width: 100vw;
   height: calc(100vh - 70px); 
   background-color: transparent;
-  background-size: cover; 
+  background-size: cover;
   background-position: center; 
   background-repeat: no-repeat; 
   margin: 0;
@@ -17,7 +12,7 @@
   overflow: hidden;
 }
 
-.intro::before {
+#intro::before {
   content: "";
   position: absolute; 
   top: 0;
@@ -28,7 +23,7 @@
   z-index: 0; 
 }
 
-.intro h1 {
+#intro h1 {
   font-size: 3.5rem; 
   color: white; 
   position: absolute;
@@ -39,7 +34,7 @@
   margin: 0; 
 }
 
-.intro h2 {
+#intro h2 {
   font-size: 2.5rem;
   color: white;
   position: absolute; 
@@ -50,8 +45,8 @@
   margin: 0; 
 }
 
-.intro button {
-  background-color: #0d6efd ;
+#intro button {
+  background-color: #0d6efd;
   color: #f4f4f4;
   border-radius: 5px;
   border-style: none;
@@ -65,12 +60,12 @@
   z-index: 1;
 }
 
-.intro button:hover {
-  background-color: #1e1e1e ;
+#intro button:hover {
+  background-color: #1e1e1e;
 }
 
-/* SECTION À PROPOS */
-.about {
+/* About Section */
+#about {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -84,70 +79,63 @@
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.about:hover {
+#about:hover {
   transform: scale(1.02);
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* À PROPOS - PARTIE GAUCHE */
-.about-left {
+#about-left {
   flex: 1;
   text-align: left;
   padding-right: 2rem;
 }
 
-.about-left h2 {
+#about-left h2 {
   font-size: 2.5rem;
   color: #1e1e1e;
-  position: relative;
-  display: inline-block;
   margin-bottom: 1rem;
 }
 
-.about-left .underline {
+#about-left #underline {
   width: 50%;
   height: 4px;
   background: #0d6efd;
   margin-bottom: 1rem;
 }
 
-.about-left p {
+#about-left p {
   font-size: 1.2rem;
   color: #555;
   line-height: 1.6;
 }
 
-/* COMPÉTENCES - PARTIE DROITE */
-.about-right {
+#about-right {
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alignement à gauche */
+  align-items: flex-start;
 }
 
-/* Image de profil bien cadrée */
-.about-right .profile-img {
+#about-right .profile-img {
   width: 90%; /* Réduit la largeur pour éviter le dépassement */
-  max-width: 280px; /* Taille max pour éviter qu'elle dépasse trop */
-  border-radius: 10px;
-  margin: 0 auto 1rem auto; /* Centrée horizontalement */
-  align-self: center; /* Évite le dépassement sur la gauche */
+  max-width: 450px; /* Taille max pour éviter qu'elle dépasse trop */
+  border-radius: 5px;
+  margin-left: 0; /* Aligne l'image à gauche du conteneur */
+  margin-bottom: 1rem; /* Espacement en bas de l'image */
+  align-self: flex-start; /* Aligne l'image au début */
+  object-fit: cover; /* l'image garde de bonnes proportions sans déformation */
 }
 
-/* Titre "Mes compétences" aligné à gauche */
-.about-right h3 {
+#about-right h3 {
   font-size: 1.8rem;
   color: #1e1e1e;
   margin-bottom: 1rem;
-  text-align: left; /* Alignement à gauche */
-  width: 100%;
+  text-align: left;
 }
 
-/* Barres de compétences */
-.skills {
+#skills {
   width: 100%;
   max-width: 400px;
-  margin: 0;
 }
 
 .skill {
