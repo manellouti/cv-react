@@ -46,9 +46,9 @@ const Footer = () => {
           <div className="footer-column">
             <h3>Mes derniers articles</h3>
             <ul>
-              <li><a href="#">➤ Code son site en HTML/CSS</a></li>
-              <li><a href="#">➤ Vendre ses produits sur le web</a></li>
-              <li><a href="#">➤ Se positionner sur Google</a></li>
+              <li><a href="/blog">➤ Code son site en HTML/CSS</a></li>
+              <li><a href="/blog">➤ Vendre ses produits sur le web</a></li>
+              <li><a href="/blog">➤ Se positionner sur Google</a></li>
             </ul>
           </div>
         </div>

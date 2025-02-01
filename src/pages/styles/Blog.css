@@ -102,8 +102,8 @@
     font-size: 0.9rem; /* Réduit la taille du texte */
     padding: 5px 15px; /* Réduit l'espace intérieur */
     border: 2px solid #0d6efd; /* Contour bleu */
-    background-color: #0d6efd !important; /* Fond bleu */
-    color: white !important; /* Texte en blanc */
+    background-color: #0d6efd; /* Fond bleu */
+    color: white; /* Texte en blanc */
     cursor: pointer;
     border-radius: 5px; /* Coins arrondis */
     margin-top: auto; /* Le maintient en bas du bloc */
@@ -113,8 +113,8 @@
 }
 
 .voir-btn:hover {
-    background-color: #0056b3 !important; /* Bleu plus foncé au survol */
-    border-color: #0056b3 !important; /* Bordure plus foncée au survol */
+    background-color: #0056b3; /* Bleu plus foncé au survol */
+    border-color: #0056b3; /* Bordure plus foncée au survol */
 }
 
 
