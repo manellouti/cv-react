@@ -55,7 +55,7 @@ const Footer = () => {
   
         {/* Barre foncée en dessous */}
         <div className="footer-bottom">
-          <p>Designed by John Doe</p>
+        <p>© Designed by John Doe</p> 
         </div>
       </footer>
     );
