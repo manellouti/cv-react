@@ -3,6 +3,7 @@
   justify-content: flex-end; 
   width: 100%;
   align-items: center;
+  margin-top: 10px;
 }
 
 .navbar ul {

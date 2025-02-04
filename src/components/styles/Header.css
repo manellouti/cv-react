@@ -1,11 +1,16 @@
 .header {
-  background-color: #1e1e1e ;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1e1e1e;
   color: white;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
   padding: 0.2rem 2rem;
   box-sizing: border-box;
+  z-index: 1000;
 }
 
 .header p {

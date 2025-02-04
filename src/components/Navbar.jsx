@@ -5,10 +5,14 @@ import './styles/Navbar.css';
 function Navbar() {
 const location = useLocation();
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
   return (
     <header className="header">
       <nav className="navbar">
-      <p>JOHN DOE</p>
+       <p onClick={scrollToTop} className="scroll-to-top">JOHN DOE</p>
       <ul>
         <li>
           <Link
