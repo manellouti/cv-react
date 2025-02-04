@@ -6,7 +6,8 @@ import Home from './pages/Home';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import Services from './pages/Services';
-import Realisations from './pages/Realisations';
+import Realisations from './pages/Realisations'
+import LegalMentions from './pages/LegalMentions';
 import Footer from './components/Footer';
 import ScrollToAnchor from "./components/ScrollToAnchor";
 import './App.css';
@@ -24,7 +25,7 @@ function App() {
       <Route path="/contact" exact element={<Contact />} />
       <Route path="/realisations" exact element={<Realisations />} />
       <Route path="/Services" exact element={<Services />} />
-      {/* ici les autres routes pour les pages */}
+      <Route path="/legalmentions" exact element={<LegalMentions />} />
     </Routes>
     <ScrollToAnchor />
     <Footer />
