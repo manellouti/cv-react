@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import './styles/Contact.css';
 import { FaMapMarkerAlt, FaMobileAlt } from "react-icons/fa";
 import backgroundImage from "../assets/img/contact-bg.jpg";
 
 const Contact = () => {
+    const [messageEnvoye, setMessageEnvoye] = useState(false); // ✅ Ajout d'un état pour gérer l'affichage du message
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setMessageEnvoye(true); // ✅ Active le message de confirmation
+    setTimeout(() => setMessageEnvoye(false), 5000); // ✅ Cache le message après 5 secondes
+  };
+
   return (
     <div className="contact-page" style={{ backgroundImage: `url(${backgroundImage})` }}>
       <div className="contact-container">
@@ -15,7 +23,7 @@ const Contact = () => {
           <div className="contact-form-section">
             <h2>Formulaire de contact</h2>
             <hr className="blue-line-long" />
-            <form className="contact-form">
+            <form className="contact-form" onSubmit={handleSubmit}>
               <input type="text" placeholder="Votre nom" required />
               <input type="email" placeholder="Votre adresse mail" required />
               <input type="tel" placeholder="Votre numéro de téléphone" required />
@@ -23,6 +31,7 @@ const Contact = () => {
               <textarea placeholder="Votre message" required></textarea>
               <button type="submit" className="send-btn">Envoyer</button>
             </form>
+            {messageEnvoye && <p className="confirmation-message"> ✅ Votre message a été envoyé avec succès !</p>}
           </div>
 
           {/* Coordonnées + Google Maps */}
