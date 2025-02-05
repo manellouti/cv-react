@@ -17,7 +17,7 @@ const Blog = () => {
       <main className="realisations-main">
         <h1>BLOG</h1>
         <p>Retrouvez ici quelques articles sur le développement web.</p>
-        <hr className="blue-line" />
+        <div className="blue-line"></div>
 
         {/* Conteneur flex pour les blocs */}
         <div className="realisations-blocks">

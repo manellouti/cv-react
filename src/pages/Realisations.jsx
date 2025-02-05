@@ -14,7 +14,7 @@ const Realisations = () => {
       <main className="realisations-main">
         <h1>PORTFOLIO</h1>
         <p>Voici quelques-unes de mes réalisations.</p>
-        <hr className="blue-line" />
+        <div className="blue-line"></div>
 
         <div className="realisations-blocks">
           {/* Fresh Food*/}

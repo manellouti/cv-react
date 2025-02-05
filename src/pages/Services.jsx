@@ -13,7 +13,7 @@ const Services = () => {
       <main className="services-main">
         <h1>MON OFFRE DE SERVICES</h1>
         <p>Voici les prestations sur lesquelles je peux intervenir.</p>
-        <hr className="blue-line" />
+        <div className="blue-line"></div>
 
         <div className="service-blocks">
           {/* UX DESIGN Block */}
