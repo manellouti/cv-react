@@ -46,7 +46,9 @@ const Footer = () => {
             <p>69009 Lyon, France</p>
             <p>Téléphone : 06 20 30 40 50</p>
             <div className="footer-icons">
-              <a href="#" aria-label="GitHub"><FaGithub /></a>
+            <Link to="/github-profile" aria-label="Voir le profil GitHub">
+              <FaGithub />
+            </Link>
               <a href="#" aria-label="Twitter"><FaTwitter /></a>
               <a href="#" aria-label="LinkedIn"><FaLinkedin /></a>
             </div>

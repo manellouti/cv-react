@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Switch } from 'react-router-dom';
 import Header from './components/Header';
 import Navbar from './components/Navbar'; 
 import Home from './pages/Home'; 
@@ -10,6 +10,7 @@ import Realisations from './pages/Realisations'
 import LegalMentions from './pages/LegalMentions';
 import Footer from './components/Footer';
 import ScrollToAnchor from "./components/ScrollToAnchor";
+import GitHubPage from './pages/GitHubPage';
 import './App.css';
 
 
@@ -26,9 +27,10 @@ function App() {
       <Route path="/realisations" exact element={<Realisations />} />
       <Route path="/Services" exact element={<Services />} />
       <Route path="/legalmentions" exact element={<LegalMentions />} />
-    </Routes>
-    <ScrollToAnchor />
-    <Footer />
+      <Route path="/github-profile" element={<GitHubPage />} />
+      </Routes>
+      <ScrollToAnchor />
+      <Footer />
     </div>
     </Router>
   );
