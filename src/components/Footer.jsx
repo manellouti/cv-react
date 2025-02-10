@@ -1,9 +1,41 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
 import './styles/Footer.css';
 
 const Footer = () => {
+  useEffect(() => {
+
+    const handleScroll = () => {
+      const scrollToTopButton = document.getElementById('footerScrollToTop');
+      const docHeight = document.documentElement.scrollHeight; 
+      const winHeight = window.innerHeight; 
+      const scrollPos = window.scrollY;
+
+      // Affiche le bouton lorsque l'utilisateur est proche du bas de la page
+      if (scrollPos + winHeight >= docHeight - 100) { 
+        scrollToTopButton.classList.add('show');
+      } else {
+        scrollToTopButton.classList.remove('show');
+      }
+    };
+
+    // Ajout de l'écouteur d'événement
+    window.addEventListener('scroll', handleScroll);
+
+    // Nettoyage lors du démontage du composant
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
     return (
       <footer className="footer">
         <div className="footer-container">
@@ -55,8 +87,16 @@ const Footer = () => {
   
         {/* Barre foncée en dessous */}
         <div className="footer-bottom">
-        <p>© Designed by John Doe</p> 
-        </div>
+        <p>© Designed by John Doe</p>       
+      </div>
+
+      <button 
+  id="footerScrollToTop" 
+  className="footer-scroll-to-top" 
+  onClick={scrollToTop}>
+  ↑
+</button>
+
       </footer>
     );
 };

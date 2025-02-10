@@ -51,6 +51,10 @@
     border-radius: 8px;
     background-color: #ffffff;
   }
+
+.service-block:hover .icon {
+  color: #cde1f8;
+}
   
   .service-block h2 {
     color:#333;
