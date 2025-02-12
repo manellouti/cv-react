@@ -78,7 +78,8 @@ Vanilla JavaScript – Certaines interactions sont développées en JS natif.
 CSS moderne – Stylisation responsive et animations.
 Git & GitHub – Gestion du code et du versionnement.
 
-validator w3C : <img width="729" alt="image" src="https://github.com/user-attachments/assets/6889e83b-8907-4e0f-93c4-c131a14bcb7a" />
+validator w3C :
+<img width="729" alt="image" src="https://github.com/user-attachments/assets/6889e83b-8907-4e0f-93c4-c131a14bcb7a" />
 
 Projet réalisé par Manel Louti dans le cadre du CEF.
 Contact : manellouti@live.fr
