@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# CV Interactif de John Doe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet est un **CV interactif** développé par **Manel Louti**, dans le cadre d'un devoir du **Centre Européen de Formation (CEF)**. Il met en avant le profil fictif de **John Doe**, un étudiant en **développement web**, en utilisant **React.js** et diverses bibliothèques modernes.
 
-## Available Scripts
+Le projet est conçu pour être **responsive**, offrant une expérience fluide sur tous types d'appareils (ordinateurs, tablettes et mobiles). Il exploite des **hooks React**, du **routing avec React Router**, ainsi que des **icônes dynamiques** via `react-icons` et `FontAwesome`.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 📌 Table des matières
+- [Aperçu](#aperçu)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies utilisées](#technologies-utilisées)
+- [Contribuer](#contribuer)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📢 Aperçu
 
-### `npm test`
+Ce projet met en avant les **compétences, expériences et réalisations** de John Doe sous la forme d'un **CV en ligne**. Il contient plusieurs sections interactives :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+✅ **Page d’accueil** – Présentation générale du candidat.  
+✅ **Compétences** – Liste des technologies maîtrisées.  
+✅ **Expérience professionnelle** – Détails des expériences passées.  
+✅ **Projets réalisés** – Affichage dynamique des réalisations.  
+✅ **Contact** – Formulaire permettant d'envoyer un message à John Doe.  
+✅ **Profil GitHub** – Intégration du profil GitHub du candidat via l'API.  
 
-### `npm run build`
+Le site est **fluide, interactif et moderne**, permettant une navigation intuitive grâce à **React Router**.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## ⚙️ Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Pour exécuter ce projet en local, suivez ces étapes :
 
-### `npm run eject`
+1. **Clonez le dépôt GitHub** :
+   ```bash
+   git clone https://github.com/ton-utilisateur/ton-projet.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Accédez au dossier du projet en local :
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+bash:
+cd ton-projet
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Installez les dépendances nécessaires :
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+bash:
+npm install
 
-## Learn More
+Lancez l'application :
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+bash:
+npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Le site sera accessible à l'adresse http://localhost:3000.
 
-### Code Splitting
+🚀 Usage
+Le CV interactif de John Doe est conçu pour être totalement responsive et inclut plusieurs fonctionnalités avancées :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🔹 Menu dynamique – Navigation fluide entre les sections du site.
+🔹 Routing avec React Router – Gestion des pages et de la navigation.
+🔹 Icônes interactives – Utilisation de react-icons et FontAwesome.
+🔹 Formulaire de contact – Permet d’envoyer un message à John Doe.
+🔹 Effets de transition et d’animation – Amélioration de l'expérience utilisateur.
+🔹 Profil GitHub intégré – Récupération et affichage des projets publics via l’API.
 
-### Analyzing the Bundle Size
+🛠️ Technologies utilisées
+Ce projet a été réalisé avec les technologies suivantes :
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+React.js – Framework JavaScript pour la construction d'interfaces interactives.
+React Hooks – Utilisation de useState et useEffect pour gérer l’état et les effets.
+React Router – Gestion des pages et des routes.
+React Icons – Utilisation d'icônes modernes (FaChevronDown, FaMapMarkerAlt, etc.).
+FontAwesome – Intégration d'icônes supplémentaires.
+Vanilla JavaScript – Certaines interactions sont développées en JS natif.
+CSS moderne – Stylisation responsive et animations.
+Git & GitHub – Gestion du code et du versionnement.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Projet réalisé par Manel Louti dans le cadre du CEF.
+Contact : manellouti@live.fr
