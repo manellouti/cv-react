@@ -171,3 +171,27 @@
 .progress-bar.js { width: 70%; background: #f7df1e; }
 .progress-bar.php { width: 60%; background: green; }
 .progress-bar.react { width: 50%; background: #0d6efd; }
+
+  /* Responsive pour écrans plus petits */
+  @media (max-width: 900px) {
+    #about {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    #about {
+        width: 80%; /* Ajuste la largeur des blocs en mode mobile */
+    }
+  
+    #intro h1 {
+        height: 100px; /* Ajuste la hauteur des images en mobile */
+        width: 100%;
+    }
+
+    #intro h2 {
+      font-size: 25px;
+      height: 20px; /* Ajuste la hauteur des images en mobile */
+      width: 100%;
+    }    
+  }
+  

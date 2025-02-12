@@ -6,7 +6,6 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 const Services = () => {
   return (
     <div className="services">
-
       {/* Bannière */}
       <div className="banner" style={{ backgroundImage: `url(${banner})` }}></div>
 

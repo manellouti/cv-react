@@ -1,9 +1,12 @@
+/* App.css */
+
+/* Styles globaux */
 .App {
   text-align: center;
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: #f8f9fa; 
+  background-color: #f8f9fa;
 }
 
 .App-link {
@@ -24,4 +27,129 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Conteneur global */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Styles généraux */
+h1, h2, h3 {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Header */
+header {
+  background: #333;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+/* Menu */
+header .menu {
+  display: flex;
+  list-style: none;
+}
+
+header .menu li {
+  margin: 0 15px;
+}
+
+header .menu li a {
+  color: #fff;
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+header .menu li a:hover {
+  color: #ffffff;
+}
+
+/* Menu Burger */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.burger div {
+  background-color: #fff;
+  height: 4px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Styles mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  header .menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    height: calc(100vh - 80px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .menu.open {
+    display: flex;
+  }
+
+  header .menu li {
+    margin: 15px 0;
+  }
+
+  header .menu li a {
+    font-size: 1.5em;
+    color: #fff;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+/* Styles tablette (1024px et moins) */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  header .menu li {
+    margin: 0 10px;
+  }
+
+  header .menu li a {
+    font-size: 1.2em;
+  }
+}
+
+/* Styles desktop (1025px et plus) */
+@media screen and (min-width: 1025px) {
+  header .menu {
+    display: flex;
+  }
+
+  header .menu li a {
+    font-size: 1.1em;
+  }
 }
